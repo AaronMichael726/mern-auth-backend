@@ -15,4 +15,6 @@ mongoose.connect(MONGO_URL, configOptions)
 
 module.exports = {
     Example: require('./example'),
+    User: require('./user'),
+    
 };

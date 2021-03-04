@@ -15,11 +15,11 @@ app.use(cors()); // allow all CORS requests
 
 // API Routes
 app.get('/api/', (req, res) => {
-  res.json({ name: 'MERN Auth API', greeting: 'Welcome to the our API', author: 'YOU', message: "Smile, you are being watched by the Backend Engineering Team" });
+    res.json({ name: 'MERN Auth API', greeting: 'Welcome to the our API', author: 'YOU', message: "Smile, you are being watched by the Backend Engineering Team" });
 });
 
 app.use('/api/examples', routes.example);
-app.use('/api/users', routes.user);
+// app.use('/api/users', routes.user);
 
 // Server
 const server = app.listen(PORT, () => console.log(`Server is running on PORT: ${PORT}`));
